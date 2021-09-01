@@ -1,7 +1,8 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import { DrawerItem, DrawerContentScrollView } from "@react-navigation/drawer";
-import {
+
+import { 
   useTheme,
   Avatar,
   Title,
@@ -13,11 +14,17 @@ import {
   Switch
 } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import BottomTabs from "./AppNavigator";
 
 export default function DrawerContent(props) {
   return (
     <DrawerContentScrollView {...props}>
+
+
+
+      
       <View style={styles.drawerContent}>
+
         <View style={styles.userInfoSection}>
           <Avatar.Image
             source={{
@@ -44,6 +51,16 @@ export default function DrawerContent(props) {
           </View>
         </View>
         <Drawer.Section style={styles.drawerSection}>
+
+
+
+        
+
+
+          
+          
+          
+          
           <DrawerItem
             icon={({ color, size }) => (
               <MaterialCommunityIcons
@@ -55,6 +72,11 @@ export default function DrawerContent(props) {
             label="Profile"
             onPress={() => {}}
           />
+
+
+
+
+
           <DrawerItem
             icon={({ color, size }) => (
               <MaterialCommunityIcons name="tune" color={color} size={size} />
@@ -62,6 +84,9 @@ export default function DrawerContent(props) {
             label="Preferences"
             onPress={() => {}}
           />
+
+
+
           <DrawerItem
             icon={({ color, size }) => (
               <MaterialCommunityIcons
@@ -73,6 +98,9 @@ export default function DrawerContent(props) {
             label="Bookmarks"
             onPress={() => {}}
           />
+
+
+
         </Drawer.Section>
         <Drawer.Section title="Preferences">
           <TouchableRipple onPress={() => {}}>
@@ -127,7 +155,7 @@ const styles = StyleSheet.create({
     marginRight: 3
   },
   drawerSection: {
-    marginTop: 15
+    marginTop: 15,
   },
   preference: {
     flexDirection: "row",
@@ -136,3 +164,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16
   }
 });
+
+
+
+
+
+
