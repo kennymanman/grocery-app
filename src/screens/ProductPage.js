@@ -13,7 +13,7 @@ import { Title, Subtitle, Text, Icon } from "native-base";
 import { Button } from "react-native-elements";
 import { AddCartContext, AddSavedContext } from "../screens/CartContext";
 import { RNCarousel } from "react-native-carousel-cards";
-import DropdownMenu from "react-native-dropdownmenus";
+
 
 export default function ProductPage({ route, navigation }) {
   // routes
@@ -146,23 +146,7 @@ export default function ProductPage({ route, navigation }) {
           </Text>
 
           <View style={{ marginTop: 80, left: 25 }}>
-            <DropdownMenu
-              style={{ flex: 1 }}
-              bgColor={"white"}
-              tintColor={"#666666"}
-              activityTintColor={"green"}
-              //arrowImg={}
-              // checkImage={}
-              // optionTextStyle={{color: '#333333'}}
-              //titleStyle={{color: '#333333'}}
-              maxHeight={300}
-              handler={(selection, row) =>
-                // this.setState({text: data[selection][row]})
-                this._conditionChange(selection, row)
-              }
-              data={conditionData}
-              selectIndex={[0]}
-            ></DropdownMenu>
+            
             <Title style={{ textAlign: "left", marginTop: 8 }}>Quantity</Title>
           </View>
 

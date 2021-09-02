@@ -18,7 +18,7 @@ import { Ionicons } from "@expo/vector-icons"
 import { Entypo } from "@expo/vector-icons"
 import { FAB } from "react-native-paper"
 import {AddCartContext} from "./CartContext"
-import DropdownMenu from 'react-native-dropdownmenus';
+
 
 
 
